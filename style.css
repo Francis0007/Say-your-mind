@@ -1,0 +1,158 @@
+body {
+    background-color: white;
+    font-family: "Montserrat", serif;
+    border: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    gap: 26px;
+}
+
+nav a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.container  {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.post-form {
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid gray;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+    .post-form {
+        width: 90%;
+    }
+}
+.post-form input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+}
+.post-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+    height: 120px;
+}
+.post-form button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+    border: none;
+}
+.post-form button:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.post {
+    border: 2px solid gray;
+    margin-bottom: 10px;
+    width: 40%;
+    margin-bottom: 10px;
+}
+.post input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+}
+.post textarea {
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+    height: 80px;
+}
+.post button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+    border: none;
+}
+
+@
+
+
+
+
+
+
+
+
+.login form label {
+    margin-left: -10px;
+}
+
+.login form input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+    .post{
+        width: 90%;
+    }
+}
+.login form input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+.login form input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+.login form button[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+    background-color: black;
+    color: white;
+    border: none;
+}
+@media screen and (max-width: 767px) {
+    .login form input[type="text"] {
+        width: 80%;
+    } 
+    .login form input[type="email"] {
+        width: 80%;
+    } 
+    .login form input[type="password"]{
+        width: 80%;
+    }
+    .login form button[type="submit"] {
+        width: 80%;
+    }
+    .login h1 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+.login form button[type="submit"]:hover {
+    color: black;
+    background-color: white;
+}
