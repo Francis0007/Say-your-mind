@@ -18,31 +18,39 @@ if (isset($_SESSION['user_id'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Say your mind</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <nav>
-    <a href="index.php">Home</a>
-    <a href="notifications.php">Notifications</a>
-    <?php if (isset($user)): ?>
-        <span>Welcome, <?php echo htmlspecialchars($user['username']); ?>!</span>
-        <a href="logout.php">Logout</a>
-    <?php else: ?>
-        <a href="login.php">Login</a>
-        <a href="register.php">Register</a>
-    <?php endif; ?>
+    <h3>Say Your Mind</h3>
+
+    <i class="fa fa-bars" id="menu-bar"></i>
+
+    <div class="menu">
+        <a href="index.php">Home</a>
+        <a href="notifications.php">Notifications</a>
+        <?php if (isset($user)): ?>
+            <span>Welcome, <?php echo htmlspecialchars($user['username']); ?>!</span>
+            <a href="logout.php">Logout</a>
+        <?php else: ?>
+            <a href="login.php">Login</a>
+            <a href="register.php">Register</a>
+        <?php endif; ?>
+    </div>
 </nav>
 <center>
 <div class="container">
-    <h1>Just say your mind and wait for others opinions or advice</h1>
+    <h2>Feel Like Venting?</h2>
+    <p>__Just say your mind and wait for others opinions or advice__</p>
     
     <form class="post-form" action="add_post.php" method="POST">
         <?php if (isset($user)): ?>
