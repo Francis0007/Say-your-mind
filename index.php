@@ -17,7 +17,6 @@ if (isset($_SESSION['user_id'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- <?php include_once (dirname(__FILE__) . '/pa_antiadblock_8723185.php'); ?> -->
     <meta charset="UTF-8">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

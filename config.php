@@ -1,8 +1,8 @@
 <?php
- $host = "sql203.infinityfree.com"; 
- $username = "if0_37987503"; 
- $password = "LL3uZgKp3a";     
- $dbname = "if0_37987503_mind_say";
+ $host = "localhost"; 
+ $username = "root"; 
+ $password = "";     
+ $dbname = "mind_say";
 $ip_address = $_SERVER['REMOTE_ADDR'];
  
 
