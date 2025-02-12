@@ -16,7 +16,7 @@ nav {
     opacity: .9;
 }
 
-nav h3 {
+nav h3, .container h2 {
     color: #63A088;
     font-family: "Atkinson Hyperlegible Next", serif;;
 }
